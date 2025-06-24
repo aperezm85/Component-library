@@ -1,7 +1,7 @@
 import clsx from "clsx";
-import { Sizes } from "../../types/Sizes";
+import { Sizes } from "@/types/Sizes";
 
-export interface LabelProps {
+export interface LabelProps extends React.HTMLAttributes<HTMLSpanElement> {
   size?:
     | typeof Sizes.Large
     | typeof Sizes.Medium
@@ -10,7 +10,7 @@ export interface LabelProps {
   text: string;
 }
 
-export const Label = ({ size = Sizes.Medium, text }: LabelProps) => {
+export const Label = ({ size = Sizes.Medium, text, ...rest }: LabelProps) => {
   let className = "";
   switch (size) {
     case Sizes.Large:
@@ -28,10 +28,11 @@ export const Label = ({ size = Sizes.Medium, text }: LabelProps) => {
   }
 
   return (
-    <label
+    <span
       className={clsx("font-uber-move-text-medium", "font-medium", className)}
+      {...rest}
     >
       {text}
-    </label>
+    </span>
   );
 };

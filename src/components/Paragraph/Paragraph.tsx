@@ -1,7 +1,7 @@
 import clsx from "clsx";
-import { Sizes } from "../../types/Sizes";
+import { Sizes } from "@/types/Sizes";
 
-interface ParagraphProps {
+interface ParagraphProps extends React.HTMLAttributes<HTMLParagraphElement> {
   size?:
     | typeof Sizes.Large
     | typeof Sizes.Medium
@@ -13,6 +13,7 @@ interface ParagraphProps {
 export const Paragraph = ({
   size = Sizes.Medium,
   children,
+  ...rest
 }: ParagraphProps) => {
   let className = "";
   switch (size) {
@@ -33,6 +34,7 @@ export const Paragraph = ({
   return (
     <p
       className={clsx("font-uber-move-text-regular", "font-normal", className)}
+      {...rest}
     >
       {children}
     </p>

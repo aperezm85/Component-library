@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import { Sizes } from "../../types/Sizes";
+import { Sizes } from "@/types/Sizes";
 import type { JSX } from "react";
 
-export interface DisplayProps {
+export interface DisplayProps extends React.HTMLAttributes<HTMLHeadingElement> {
   size?:
     | typeof Sizes.Large
     | typeof Sizes.Medium
@@ -11,7 +11,11 @@ export interface DisplayProps {
   text: string;
 }
 
-export const Display = ({ size = Sizes.Medium, text }: DisplayProps) => {
+export const Display = ({
+  size = Sizes.Medium,
+  text,
+  ...rest
+}: DisplayProps) => {
   let className = "";
   let level: 1 | 2 | 3 | 4 = 2; // Default to h2
   switch (size) {
@@ -36,7 +40,10 @@ export const Display = ({ size = Sizes.Medium, text }: DisplayProps) => {
   const Component: keyof JSX.IntrinsicElements = `h${level}`;
 
   return (
-    <Component className={clsx("font-uber-move-bold", "font-bold", className)}>
+    <Component
+      className={clsx("font-uber-move-bold", "font-bold", className)}
+      {...rest}
+    >
       {text}
     </Component>
   );

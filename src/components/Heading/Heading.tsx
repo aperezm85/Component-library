@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import { Sizes } from "../../types/Sizes";
+import { Sizes } from "@/types/Sizes";
 import type { JSX } from "react";
 
-export interface HeadingProps {
+export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   size?:
     | typeof Sizes.XXLarge
     | typeof Sizes.XLarge
@@ -13,7 +13,11 @@ export interface HeadingProps {
   text: string;
 }
 
-export const Heading = ({ size = Sizes.Medium, text }: HeadingProps) => {
+export const Heading = ({
+  size = Sizes.Medium,
+  text,
+  ...rest
+}: HeadingProps) => {
   let className = "";
   let level: 1 | 2 | 3 | 4 | 5 | 6 = 2; // Default to h2
   switch (size) {
@@ -46,7 +50,10 @@ export const Heading = ({ size = Sizes.Medium, text }: HeadingProps) => {
   const Component: keyof JSX.IntrinsicElements = `h${level}`;
 
   return (
-    <Component className={clsx("font-uber-move-bold", "font-bold", className)}>
+    <Component
+      className={clsx("font-uber-move-bold", "font-bold", className)}
+      {...rest}
+    >
       {text}
     </Component>
   );

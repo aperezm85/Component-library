@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import { Sizes } from "../../types/Sizes";
+import { Sizes } from "@/types/Sizes";
 import { Heading, type HeadingProps } from "./Heading";
 
 const meta = {
@@ -11,10 +11,17 @@ const meta = {
     size: {
       control: {
         type: "select",
-        options: Object.values(Sizes),
       },
+      options: Object.values(Sizes),
       description: "The size of the Heading text.",
       defaultValue: Sizes.Medium,
+    },
+    text: {
+      control: {
+        type: "text",
+      },
+      description: "The text content of the Heading.",
+      defaultValue: "We ignite opportunity by setting the world in motion.",
     },
   },
 } satisfies Meta<typeof Heading>;

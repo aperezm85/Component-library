@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import { Sizes } from "../../types/Sizes";
+import { Sizes } from "@/types/Sizes";
 import { Label, type LabelProps } from "./Label";
 
 const meta = {
@@ -11,10 +11,22 @@ const meta = {
     size: {
       control: {
         type: "select",
-        options: Object.values(Sizes),
       },
+      options: Object.values([
+        Sizes.Large,
+        Sizes.Medium,
+        Sizes.Small,
+        Sizes.XSmall,
+      ]),
       description: "The size of the Label text.",
       defaultValue: Sizes.Medium,
+    },
+    text: {
+      control: {
+        type: "text",
+      },
+      description: "The text content of the Label.",
+      defaultValue: "We ignite opportunity by setting the world in motion.",
     },
   },
 } satisfies Meta<typeof Label>;
