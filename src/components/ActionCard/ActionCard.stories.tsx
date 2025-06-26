@@ -24,7 +24,7 @@ export const RectActionCard: Story = {
     title: "Trip",
     subtitle: "Go anywhere with Uber. Request a trip, hop in and go.",
     buttonTitle: "Details",
-    image: "/assets/images/ride.png",
+    image: "assets/images/ride.png",
     altImage: "Trip",
     link: "#",
   },
@@ -36,7 +36,7 @@ export const AllCards: Story = {
     title: "Trip",
     subtitle: "Go anywhere with Uber. Request a trip, hop in and go.",
     buttonTitle: "Details",
-    image: "/assets/images/ride.png",
+    image: "assets/images/ride.png",
     altImage: "Trip",
     link: "#",
   },
@@ -46,7 +46,7 @@ export const AllCards: Story = {
         title={"Trip"}
         subtitle={"Go anywhere with Uber. Request a trip, hop in and go."}
         buttonTitle={"Details"}
-        image={"/assets/images/ride.png"}
+        image={"assets/images/ride.png"}
         altImage={"Trip"}
         link={"#"}
       />
@@ -56,7 +56,7 @@ export const AllCards: Story = {
           "Reserve your ride in advance so you can relax on the day of your trip."
         }
         buttonTitle={"Details"}
-        image={"/assets/images/reserve_clock.png"}
+        image={"assets/images/reserve_clock.png"}
         altImage={"Reserve"}
         link={"#"}
       />
@@ -64,7 +64,7 @@ export const AllCards: Story = {
         title={"Train and coach"}
         subtitle={"Book train, coach and Eurostar tickets in the Uber app."}
         buttonTitle={"Details"}
-        image={"/assets/images/uber_train_coach.png"}
+        image={"assets/images/uber_train_coach.png"}
         altImage={"Train and coach"}
         link={"#"}
       />
@@ -74,7 +74,7 @@ export const AllCards: Story = {
           "Your perfect rental car is a few clicks away. Learn more about Uber Car Hire."
         }
         buttonTitle={"Details"}
-        image={"/assets/images/car-rentals.png"}
+        image={"assets/images/car-rentals.png"}
         altImage={"Car hire"}
         link={"#"}
       />
@@ -82,7 +82,7 @@ export const AllCards: Story = {
         title={"Flights"}
         subtitle={"Book your next plane flight through the Uber app."}
         buttonTitle={"Details"}
-        image={"/assets/images/uber_flight.png"}
+        image={"assets/images/uber_flight.png"}
         altImage={"Flights"}
         link={"#"}
       />
@@ -90,7 +90,7 @@ export const AllCards: Story = {
         title={"Food"}
         subtitle={"Order delivery from local restaurants with Uber Eats."}
         buttonTitle={"Details"}
-        image={"/assets/images/ub_mode_nav_eats.png"}
+        image={"assets/images/ub_mode_nav_eats.png"}
         altImage={"Food"}
         link={"#"}
       />
