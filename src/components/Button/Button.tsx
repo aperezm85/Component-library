@@ -89,7 +89,7 @@ export const Button = ({
           "bg-[var(--bg-state-disabled)] text-[var(--content-state-disabled)] cursor-not-allowed pointer-events-none",
         hierarchy === Hierarchy.Tertiary &&
           state !== States.Disabled &&
-          "bg-transparent text-[var(--content-primary)] hover:bg-gray-200",
+          "bg-white text-[var(--content-primary)] hover:bg-gray-200",
         hierarchy === Hierarchy.Tertiary &&
           state === States.Disabled &&
           "bg-transparent text-[var(--content-state-disabled)] cursor-not-allowed pointer-events-none",
