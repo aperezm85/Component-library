@@ -5,7 +5,7 @@ import { Badge, type BadgeProps } from "./Badge";
 
 const meta = {
   component: Badge,
-  title: "Components/Badge/Badge",
+  title: "Components/Indicators/Badge",
   tags: ["autodocs"],
   argTypes: {
     size: {

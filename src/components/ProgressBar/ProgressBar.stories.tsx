@@ -7,7 +7,7 @@ import { Heading } from "../Heading/Heading";
 
 const meta = {
   component: ProgressBar,
-  title: "Components/Progress/ProgressBar",
+  title: "Components/Indicators/ProgressBar",
   tags: ["autodocs"],
   argTypes: {
     size: {
