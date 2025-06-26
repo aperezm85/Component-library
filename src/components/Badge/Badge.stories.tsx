@@ -64,7 +64,7 @@ export const AllBadges: Story = {
   render: (args: BadgeProps) => (
     <div className="flex flex-row gap-4">
       {["accent", "positive", "negative", "warning"].map((style) => (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4" key={style}>
           <Badge
             {...args}
             size={Sizes.Medium}

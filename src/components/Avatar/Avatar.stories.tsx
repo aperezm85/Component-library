@@ -36,9 +36,14 @@ export const AllAvatars: Story = {
   render: (args: AvatarProps) => (
     <div className="flex flex-row gap-4">
       {Object.values(Sizes).map((size) => (
-        <div className="flex flex-col gap-4 ">
-          <Avatar key={size} {...args} size={size} />
-          <Avatar key={size} {...args} size={size} initials={undefined} />
+        <div key={size} className="flex flex-col gap-4 ">
+          <Avatar key={`${size}-with-initials`} {...args} size={size} />
+          <Avatar
+            key={`${size}-without-initials`}
+            {...args}
+            size={size}
+            initials={undefined}
+          />
         </div>
       ))}
     </div>

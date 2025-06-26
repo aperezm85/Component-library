@@ -41,6 +41,7 @@ export const Tag = ({
   iconTrailing = false,
   trailingIcon,
   text,
+  ...rest
 }: TagProps) => {
   const offset = isSelected ? "-outline-offset-3" : "-outline-offset-2";
 
@@ -183,6 +184,7 @@ export const Tag = ({
   }
   return (
     <div
+      {...rest}
       className={clsx(
         "inline-flex items-center justify-center flex-row gap-1 w-auto",
         "rounded-lg",

@@ -129,6 +129,7 @@ export const ProgressBar = ({
         {steps > 0 &&
           Array.from({ length: steps }, (_, index) => (
             <div
+              key={`step-${index}`}
               className={clsx(
                 "grow-1 h-full",
                 index < stepsCompleted && "bg-[var(--border-accent)]",

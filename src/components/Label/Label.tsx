@@ -29,8 +29,8 @@ export const Label = ({ size = Sizes.Medium, text, ...rest }: LabelProps) => {
 
   return (
     <span
-      className={clsx("font-uber-move-text-medium", "font-medium", className)}
       {...rest}
+      className={clsx("font-uber-move-text-medium", "font-medium", className)}
     >
       {text}
     </span>

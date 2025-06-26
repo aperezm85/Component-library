@@ -51,8 +51,8 @@ export const Heading = ({
 
   return (
     <Component
-      className={clsx("font-uber-move-bold", "font-bold", className)}
       {...rest}
+      className={clsx("font-uber-move-bold", "font-bold", className)}
     >
       {text}
     </Component>

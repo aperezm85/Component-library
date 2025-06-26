@@ -33,8 +33,8 @@ export const Paragraph = ({
 
   return (
     <p
-      className={clsx("font-uber-move-text-regular", "font-normal", className)}
       {...rest}
+      className={clsx("font-uber-move-text-regular", "font-normal", className)}
     >
       {children}
     </p>

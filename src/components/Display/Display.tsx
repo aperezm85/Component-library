@@ -41,8 +41,8 @@ export const Display = ({
 
   return (
     <Component
-      className={clsx("font-uber-move-bold", "font-bold", className)}
       {...rest}
+      className={clsx("font-uber-move-bold", "font-bold", className)}
     >
       {text}
     </Component>
