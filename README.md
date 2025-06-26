@@ -1,5 +1,7 @@
 # COMPONENT LIBRARY
 
+{Link to the library deployed on Github Pages}[https://aperezm85.github.io/Component-library/]
+
 Component library based on the UBER base library found in [FIGMA community](https://www.figma.com/community/file/805195278314519508/base-gallery)
 
 Project created using Vite 7 + React
@@ -18,6 +20,9 @@ Project just for fun to add into my portfolio and a good opportunity to use the 
 
 Icons library
 [iconoir-css](https://iconoir.com/docs/packages/css)
+
+Deploying Storybook on Guthub pages
+I followed this blog https://www.bitovi.com/blog/deploy-storybook-to-github-pages-with-github-actions
 
 # Problems I found
 
